@@ -1,0 +1,39 @@
+.home-section {
+  padding: 30px 15px;
+  background-color: #f8fafc;
+}
+
+.hover-container {
+  display: flex;
+  gap: 15px;
+  height: 80vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-box {
+  flex: 1;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hover-box:hover {
+  flex: 4; /* Expands the hovered box */
+  background-color: #6366f1;
+  cursor: pointer;
+}
+
+.hover-box p {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.hover-box:hover p {
+  opacity: 1; /* Show more content on hover */
+}

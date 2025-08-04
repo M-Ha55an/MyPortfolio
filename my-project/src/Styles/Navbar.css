@@ -1,0 +1,70 @@
+.navbar {
+  background-color: #82a2ff;
+  height: 80px;
+}
+
+.nav-link,
+.navbar-brand {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #2600ff;
+}
+
+.logo {
+  height: auto;
+  max-width: 15rem;
+}
+
+@media (max-width: 992px) {
+  .logo {
+    max-width: 222px;
+    margin: -75px -15px;
+  }
+
+  .navbar-collapse.show {
+    background-color: #82a2ff !important;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100vw;
+    z-index: 1;
+    padding: 20px 30px;
+    animation: slideDownFade 0.1s ease-out;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 202px;
+    margin: -65px -16px;
+  }
+
+  .navbar-collapse.show {
+    background-color: #82a2ff !important;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100vw;
+    z-index: 1;
+    padding: 20px 30px;
+    animation: slideDownFade 0.1s ease-out;
+  }
+
+}
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #0dcaf0;
+  }
+}
