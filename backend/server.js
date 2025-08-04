@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://hassan:hassan123@contactform.3xw8zzv.mongodb.net/contactform?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://hassan:@contactform.3xw8zzv.mongodb.net/contactform?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
